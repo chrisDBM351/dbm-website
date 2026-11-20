@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.build/
+.env
+.env.*
+!.env.example
+test-results/
+playwright-report/
+input/
+setup/
+qa/
+visual-summary.json
+*.log
+.DS_Store

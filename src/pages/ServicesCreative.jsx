@@ -1,0 +1,56 @@
+import React from 'react';
+import { Header, Footer } from '../components/SiteChrome.jsx';
+
+function SectionPhHero0(){return (<>
+<section className="ph-hero"><canvas className="gl" data-k="0.9" aria-hidden="true" /><div className="vig" /><div className="grain" />
+  <div className="wrap"><div className="ph-grid"><div><h1 className="words in" data-split>Creative that<br /><em>stops the scroll.</em></h1>
+        <div className="hsub rv in" style={{"transitionDelay":".35s"}}>Made in-house. <b>Judged on revenue.</b></div>
+        <p className="hp rv in" style={{"transitionDelay":".45s"}}>Your ads are only as good as the first three seconds. We write, shoot, cut and design every piece ourselves, then let the numbers decide what runs.</p>
+        <div className="acts rv in" style={{"transitionDelay":".6s"}}><a className="btn" href="#contact">Book a Free Audit Call <i aria-hidden="true">↗</i></a></div></div><div className="rv in" style={{"transitionDelay":".5s"}}><div className="mock" role="img" aria-label="Illustration: three ad creative variations being tested"><div className="bar"><i /><i /><i /><span>Creative test · week 3</span></div><div className="film"><div className="fr"><img src="/img/roofing.webp" alt="" loading="lazy" /><span className="k">Hook A</span><span>Your roof is <em>talking.</em></span></div><div className="fr w"><img src="/img/plumbing.webp" alt="" loading="lazy" /><span className="k">Hook B · Winner</span><span>Burst pipe? <em>We're on it.</em></span></div><div className="fr"><img src="/img/homes.webp" alt="" loading="lazy" /><span className="k">Hook C</span><span>Built <em>right</em> the first time.</span></div></div><div className="row" style={{"marginTop":"40px"}}><span className="lbl">Tested weekly</span><span style={{"fontWeight":"600"}}>Losers get cut. The winner gets the budget.</span></div></div></div></div></div></section>
+</>);}
+
+function SectionSec1(){return (<>
+<section className="sec t-ice tight"><div className="wrap"><div className="answer rv"><div><h2>The short version</h2><p>We make video, photo, motion graphics and ad copy in-house, then test it inside your live campaigns. Every piece is judged on the calls, bookings and sales it brings in, so the creative keeps getting better every month.</p></div><ul><li><i>✓</i><span>Video, photo, motion and copy under one roof</span></li><li><i>✓</i><span>Built for Reels, Stories, Search and your site</span></li><li><i>✓</i><span>New hooks tested every week</span></li><li><i>✓</i><span>Judged on bookings and sales, not likes</span></li></ul></div></div></section>
+</>);}
+
+function SectionSec2(){return (<>
+<section className="sec t-dark "><div className="wrap"><div className="hd2"><h2 className="words" data-split>Why most ad creative falls flat</h2></div><div className="cgrid" style={{"--c":"3"}}><div className="cd rv" style={{"transitionDelay":"0.00s"}}><span className="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" /><circle cx={12} cy={12} r={3} /></svg></span><h3>It looks like an ad</h3><p>People scroll past anything that looks like a commercial. The best ads feel like content.</p></div><div className="cd rv" style={{"transitionDelay":"0.07s"}}><span className="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx={12} cy={12} r={9} /><path d="M12 7v5l3 2" /></svg></span><h3>It never changes</h3><p>The same three images for a year. Audiences tune them out and costs creep up.</p></div><div className="cd rv" style={{"transitionDelay":"0.14s"}}><span className="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx={12} cy={12} r={9} /><path d="m9 9 6 6M15 9l-6 6" /></svg></span><h3>Made by people who never see the numbers</h3><p>When the creative team and the ads team are strangers, nobody learns what worked.</p></div></div></div></section>
+</>);}
+
+function SectionSec3(){return (<>
+<section className="sec t-ice "><div className="wrap"><div className="hd2"><h2 className="words" data-split>How we make it</h2><p className="lead rv">Strategy, production and testing on one team.</p></div><div className="cgrid" style={{"--c":"4"}}><div className="cd rv" style={{"transitionDelay":"0.00s"}}><span className="num">01</span><h3>Find the hook</h3><p>We study your best customers and your competitors, then write the angles that will land.</p></div><div className="cd rv" style={{"transitionDelay":"0.07s"}}><span className="num">02</span><h3>Produce</h3><p>On-site shoots, studio work, motion graphics and UGC-style video, all in-house.</p></div><div className="cd rv" style={{"transitionDelay":"0.14s"}}><span className="num">03</span><h3>Launch variants</h3><p>Several hooks and formats go live at once, sized for every placement.</p></div><div className="cd rv" style={{"transitionDelay":"0.21s"}}><span className="num">04</span><h3>Keep the winners</h3><p>The numbers pick the winner. We build the next round from what it taught us.</p></div></div></div></section>
+</>);}
+
+function SectionSec4(){return (<>
+<section className="sec t-royal "><div className="wrap"><div className="split"><div><h2 className="words" data-split>Creative power up front.<br /><em>Proof on the back.</em></h2><p className="lead rv">Most agencies are either creative shops or numbers shops. We built DBM to be both, because the best-looking ad in the world is worthless if you cannot tell whether it made money.</p><ul className="ticks"><li className="rv"><i>✓</i><span>Hooks written from real customer calls</span></li><li className="rv"><i>✓</i><span>Every ad tagged so its sales can be traced</span></li><li className="rv"><i>✓</i><span>Monthly creative reviews tied to revenue</span></li></ul></div><div className="rv"><div className="media"><img src="/img/creative.webp" alt="Cinematographer filming in low light" loading="lazy" style={{"objectPosition":"50% 40%"}} /></div></div></div></div></section>
+</>);}
+
+function SectionSec5(){return (<>
+<section className="sec t-dark tight"><div className="wrap"><div className="hd2 c"><h2 className="words" data-split>See it in a real account</h2></div><div className="cases" style={{"marginTop":"0"}}><a className="case rv" href="/case-studies/personal-injury-firm/" style={{"transitionDelay":"0.0s","display":"block"}}><div className="ph"><div className="tg"><span className="ch">Meta Ads</span><h3>Personal Injury Firm</h3></div><img src="/img/law.webp" alt="Attorney in a dark office" loading="lazy" /><div className="big"><span className="mono">Signed-case return</span><b>8.9x</b><span>A Meta lead-form program, measured on signed case revenue across 54 cases.</span><span className="vcs">View Case Study <i aria-hidden="true">↗</i></span></div>
+          <div className="fn"><div><span>Channel</span><b>Meta</b></div><div><span>Signed cases</span><b>54</b></div><div><span>Measured on</span><b>Case revenue</b></div><div><span>Return</span><b>8.9x</b></div></div></div></a><a className="case rv" href="/case-studies/custom-clothier/" style={{"transitionDelay":"0.1s","display":"block"}}><div className="ph"><div className="tg"><span className="ch">Google + Meta</span><h3>Custom Clothier</h3></div><img src="/img/clothier.webp" alt="Tailor measuring a client" loading="lazy" /><div className="big"><span className="mono">Tracked sales</span><b>$2.1M+</b><span>3,567 leads became 1,284 booked fittings and 801 buyers.</span><span className="vcs">View Case Study <i aria-hidden="true">↗</i></span></div>
+          <div className="fn"><div><span>Leads</span><b>3,567</b></div><div><span>Booked</span><b>1,284</b></div><div><span>Buyers</span><b>801</b></div><div><span>Sales</span><b>$2.1M+</b></div></div></div></a></div><div className="aprompt rv"><p>What’s slipping through in your account?</p><a className="btn" href="#contact">Book a Free Audit Call <i aria-hidden="true">↗</i></a></div></div></section>
+</>);}
+
+function SectionSec6(){return (<>
+<section className="sec t-ice "><div className="wrap"><div className="faq2"><div><h2 className="words" data-split>Questions owners ask us</h2><p className="lead rv">Straight answers. If yours isn't here, ask us on the call.</p></div><div className="qa"><div className="qi rv"><button type="button" aria-expanded="false">What kind of creative do you make?<i>+</i></button><div className="a"><p>Short-form video, Reels, photo shoots, motion graphics, static ads, landing page design and ad copy. Everything is made in-house.</p></div></div><div className="qi rv"><button type="button" aria-expanded="false">Do you come on site to shoot?<i>+</i></button><div className="a"><p>Yes. We shoot on location when real footage of your team and your work will perform better, and that is most of the time.</p></div></div><div className="qi rv"><button type="button" aria-expanded="false">How often do you make new ads?<i>+</i></button><div className="a"><p>We test new hooks every week in active accounts and plan bigger shoots around your busy seasons.</p></div></div><div className="qi rv"><button type="button" aria-expanded="false">Can you work with our existing brand?<i>+</i></button><div className="a"><p>Yes. We follow your brand rules, or help you tighten them if they are holding the ads back.</p></div></div></div></div></div></section>
+</>);}
+
+function SectionSec7(){return (<>
+<section className="sec t-dark tight"><div className="wrap"><p className="rel-h rv">Works best with</p><div className="rel" style={{"--c":"4"}}><a className="rv" href="/services/google-ads/"><span>Google Ads + Local Services<small>Search and Local Services Ads tuned to booked jobs</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/services/meta-ads/"><span>Meta + Social Ads<small>Facebook and Instagram ads, lead forms and Reels</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/services/tracking-attribution/"><span>Tracking + Attribution<small>Every lead followed from ad click to paid invoice</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/services/qualified-lead-signal/"><span>Qualified Lead Signal<small>Teach Google and Meta what a real buyer looks like</small></span><i aria-hidden="true">↗</i></a></div><p className="rel-h rv">Industries we run this for</p><div className="rel" style={{"--c":"4"}}><a className="rv" href="/industries/law-firms/"><span>Law Firms<small>PI, disability and family law</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/industries/health-wellness/"><span>Health + Wellness<small>Dental, med spa, wellness clinics</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/industries/fitness/"><span>Fitness Studios<small>Pilates, rowing, boxing</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/industries/retail-ecommerce/"><span>Retail + E-commerce<small>Custom apparel and Shopify</small></span><i aria-hidden="true">↗</i></a></div></div></section>
+</>);}
+
+export default function ServicesCreative(){return (<>
+<Header home={false} />
+<main id="main">
+<SectionPhHero0 />
+<SectionSec1 />
+<SectionSec2 />
+<SectionSec3 />
+<SectionSec4 />
+<SectionSec5 />
+<SectionSec6 />
+<SectionSec7 />
+</main>
+<Footer home={false} />
+<a className="btn audit-float" href="#contact" hidden>Book a Free Audit Call <i aria-hidden="true">↗</i></a>
+</>);}

@@ -1,0 +1,24 @@
+{
+  "name": "dbm-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build && node scripts/prerender.mjs",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node scripts/check-static.mjs && playwright test",
+    "test:static": "node scripts/check-static.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@vitejs/plugin-react": "^4.7.0",
+    "cheerio": "^1.1.2",
+    "esbuild": "^0.25.12",
+    "vite": "^6.4.1"
+  }
+}

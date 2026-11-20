@@ -1,0 +1,34 @@
+import React from 'react';
+import { Header, Footer } from '../components/SiteChrome.jsx';
+
+function SectionArtHero0(){return (<>
+<section className="art-hero"><div className="wrap"><div className="meta"><span className="tag">Attribution</span><span>November 5, 2026</span><span>5 min read</span></div>
+    <h1>Your 30-day ROAS is lying to you. Cases and jobs close weeks later.</h1><p className="dek">If your sales take weeks to close, a 30-day report only shows part of the story. Here is how one month went from 2.8x to 7.2x without a single change to the ads.</p>
+    <div className="art-cover"><img src="/img/b2.webp" alt="" style={{"objectPosition":"45% 50%"}} /><div className="tg"><span className="tag">Attribution</span><div className="bot"><div className="wd ch"><div className="lb">Revenue from one month of ads</div><div className="bars"><i style={{"height":"18%"}} /><i style={{"height":"26%"}} /><i style={{"height":"22%"}} /><i className="hi" style={{"height":"48%"}} /><i className="hi" style={{"height":"70%"}} /><i className="hi" style={{"height":"58%"}} /><i className="hi" style={{"height":"88%"}} /><i className="hi" style={{"height":"100%"}} /><i className="hi" style={{"height":"76%"}} /><span className="d30"><b>DAY 30</b></span></div></div><div className="hk">Day 30 is <em>not</em> the finish line.</div></div></div></div></div></section>
+</>);}
+
+function SectionArtBody1(){return (<>
+<section className="art-body"><div className="art-grid"><nav className="toc" aria-label="On this page"><b>On this page</b><a href="#what-roas-means">What ROAS means</a><a href="#the-30-day-trap">The 30-day trap</a><a href="#why-this-costs-you-money">Why this costs you money</a><a href="#what-to-do-instead">What to do instead</a><a href="#the-bottom-line">The bottom line</a></nav>
+    <article className="prose"><div className="tldr"><b>The short version</b><ul><li>Return on ad spend (ROAS) measured at 30 days misses sales that close later.</li><li>One law firm's month read 2.8x at day 30 and 7.2x once cases signed.</li><li>One roofer's median lead took about 82 days to become a signed job.</li><li>Judge campaigns on the full sales timeline, and feed late sales back to Google.</li></ul></div><h2 id="what-roas-means">What ROAS means</h2><p>Return on ad spend, or ROAS, is the revenue your ads brought in divided by what you spent. If you spend $10,000 and bring in $50,000, your ROAS is 5x. Simple enough. The trouble is <strong>when</strong> you measure it.</p><h2 id="the-30-day-trap">The 30-day trap</h2><p>Most reports look back 30 days. That works for a store that sells online the same day. It does not work for a law firm, a roofer or a builder, where the first call and the signed contract can be months apart.</p><div className="big"><div><b>2.8x</b><span>One month at day 30</span></div><div><b>7.2x</b><span>Same month, once cases signed</span></div><div><b>82 days</b><span>Median lead to signed roof</span></div></div><p>At one personal injury firm, last month's return read 2.8x. Once those cases signed, the very same month read 7.2x. Nothing about the ads changed. Only the calendar did.</p><h2 id="why-this-costs-you-money">Why this costs you money</h2><p>If you judge too early, you cut the campaigns that bring in your biggest, slowest sales, and you keep the ones that bring in quick, small ones. Over a year that can quietly shrink your business.</p><p>It gets worse with Google. At one roofer, half of all closed sales landed after Google's 90-day click window. Unless those sales are sent back, Google never learns that those clicks turned into money.</p><h2 id="what-to-do-instead">What to do instead</h2><ol><li><strong>Know your real sales cycle.</strong> Look at how long leads take to close, by channel.</li><li><strong>Report by when the lead came in</strong>, not when the money landed, and revisit old months as they mature.</li><li><strong>Send late sales back to Google and Meta</strong> as offline conversions, so the platforms learn from them.</li><li><strong>Make budget calls on matured months.</strong> Use the newest month as an early signal, not a verdict.</li></ol><h2 id="the-bottom-line">The bottom line</h2><p>Your ads may be doing better than your report says. The only way to know is to follow every lead all the way to the signed case or the paid invoice, and give it time to get there.</p>
+      <div className="byline"><span className="av">DBM</span><span><b>The DBM Team</b><span>Digital Blueprint Marketing, Pittsburgh and Orlando</span></span></div></article></div></section>
+</>);}
+
+function SectionSec2(){return (<>
+<section className="sec t-ice "><div className="wrap"><div className="faq2"><div><h2 className="words" data-split>Quick answers</h2><p className="lead rv">The questions owners ask us most about this.</p></div><div className="qa"><div className="qi rv"><button type="button" aria-expanded="false">What is a good ROAS for a local business?<i>+</i></button><div className="a"><p>It depends on your margins and how long your sales take to close. The key is measuring on real revenue, after enough time has passed for sales to close.</p></div></div><div className="qi rv"><button type="button" aria-expanded="false">Why does my ROAS go up over time?<i>+</i></button><div className="a"><p>Because sales from earlier leads keep closing after the report was first run. For high-ticket businesses, a month can look several times better once its sales mature.</p></div></div><div className="qi rv"><button type="button" aria-expanded="false">How do I send late sales back to Google?<i>+</i></button><div className="a"><p>Through offline conversion imports. Each closed sale is matched to the click that started it and sent back to Google with its value.</p></div></div></div></div></div></section>
+</>);}
+
+function SectionSec3(){return (<>
+<section className="sec t-dark tight"><div className="wrap"><p className="rel-h rv">Related services</p><div className="rel" style={{"--c":"3"}}><a className="rv" href="/services/tracking-attribution/"><span>Tracking + Attribution<small>Every lead followed from ad click to paid invoice</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/services/qualified-lead-signal/"><span>Qualified Lead Signal<small>Teach Google and Meta what a real buyer looks like</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/services/roi-dashboards/"><span>Live ROI Dashboards<small>Every dollar in, every dollar back, live</small></span><i aria-hidden="true">↗</i></a></div></div></section>
+</>);}
+
+export default function Insights30DayRoasIsLying(){return (<>
+<Header home={false} />
+<main id="main">
+<SectionArtHero0 />
+<SectionArtBody1 />
+<SectionSec2 />
+<SectionSec3 />
+</main>
+<Footer home={false} />
+<a className="btn audit-float" href="#contact" hidden>Book a Free Audit Call <i aria-hidden="true">↗</i></a>
+</>);}

@@ -1,0 +1,177 @@
+{
+  "/about/": {
+    "key": "About",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/case-studies/custom-clothier/": {
+    "key": "CaseStudiesCustomClothier",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/case-studies/home-remodeler/": {
+    "key": "CaseStudiesHomeRemodeler",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/case-studies/home-services-contractor/": {
+    "key": "CaseStudiesHomeServicesContractor",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/case-studies/": {
+    "key": "CaseStudies",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/case-studies/personal-injury-firm/": {
+    "key": "CaseStudiesPersonalInjuryFirm",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/case-studies/residential-plumber/": {
+    "key": "CaseStudiesResidentialPlumber",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/case-studies/roofing-contractor/": {
+    "key": "CaseStudiesRoofingContractor",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/free-audit/": {
+    "key": "FreeAudit",
+    "bodyClass": "no-fp",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/how-it-works/": {
+    "key": "HowItWorks",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/": {
+    "key": "Home",
+    "bodyClass": "",
+    "behavior": "/behaviors/Home.js"
+  },
+  "/industries/fitness/": {
+    "key": "IndustriesFitness",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/industries/franchise/": {
+    "key": "IndustriesFranchise",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/industries/health-wellness/": {
+    "key": "IndustriesHealthWellness",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/industries/home-services/": {
+    "key": "IndustriesHomeServices",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/industries/": {
+    "key": "Industries",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/industries/law-firms/": {
+    "key": "IndustriesLawFirms",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/industries/plumbing-hvac/": {
+    "key": "IndustriesPlumbingHvac",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/industries/remodelers-builders/": {
+    "key": "IndustriesRemodelersBuilders",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/industries/retail-ecommerce/": {
+    "key": "IndustriesRetailEcommerce",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/industries/roofing/": {
+    "key": "IndustriesRoofing",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/insights/30-day-roas-is-lying/": {
+    "key": "Insights30DayRoasIsLying",
+    "bodyClass": "lt",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/insights/conversions-are-not-revenue/": {
+    "key": "InsightsConversionsAreNotRevenue",
+    "bodyClass": "lt",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/insights/": {
+    "key": "Insights",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/insights/lsa-moving-to-performance-max/": {
+    "key": "InsightsLsaMovingToPerformanceMax",
+    "bodyClass": "lt",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/services/creative/": {
+    "key": "ServicesCreative",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/services/google-ads/": {
+    "key": "ServicesGoogleAds",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/services/": {
+    "key": "Services",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/services/local-seo/": {
+    "key": "ServicesLocalSeo",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/services/meta-ads/": {
+    "key": "ServicesMetaAds",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/services/qualified-lead-signal/": {
+    "key": "ServicesQualifiedLeadSignal",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/services/roi-dashboards/": {
+    "key": "ServicesRoiDashboards",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/services/tracking-attribution/": {
+    "key": "ServicesTrackingAttribution",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/services/websites/": {
+    "key": "ServicesWebsites",
+    "bodyClass": "",
+    "behavior": "/behaviors/Interior.js"
+  },
+  "/thank-you/": {
+    "key": "ThankYou",
+    "bodyClass": "no-fp",
+    "behavior": "/behaviors/Interior.js"
+  }
+}

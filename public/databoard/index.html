@@ -1,0 +1,103 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>DBM Live Databoard | Demo</title>
+<style>
+@font-face{font-family:G;src:url(../fonts/Gotham-Light.woff2);font-weight:300}
+@font-face{font-family:G;src:url(../fonts/Gotham-Book.woff2);font-weight:400}
+@font-face{font-family:G;src:url(../fonts/Gotham-Medium.woff2);font-weight:500}
+@font-face{font-family:G;src:url(../fonts/Gotham-Black.woff2);font-weight:900}
+@font-face{font-family:M;src:url(../fonts/JetBrainsMono.woff2)}
+:root{--bk:#03060D;--c1:#0A0F1C;--c2:#0F1628;--ln:rgba(168,216,255,.1);--royal:#1F4FE0;--baby:#A8D8FF;--dim:#8C9AB8;--mut:#5E6B88;--ok:#3DDC97}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bk);color:#fff;font-family:G,sans-serif;font-weight:400;min-height:100vh;-webkit-font-smoothing:antialiased}
+.m{font-family:M,monospace}
+.top{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;border-bottom:1px solid var(--ln);gap:16px;flex-wrap:wrap}
+.top .l{display:flex;align-items:center;gap:18px}
+.logo{font-weight:900;font-size:22px;letter-spacing:-.04em}
+.client{font-size:14px;color:var(--dim)}.client b{color:#fff;font-weight:500}
+.live{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--dim)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(61,220,151,.6);animation:p 1.6s infinite}
+@keyframes p{70%{box-shadow:0 0 0 9px rgba(61,220,151,0)}100%{box-shadow:0 0 0 0 rgba(61,220,151,0)}}
+.seg{display:flex;background:var(--c1);border:1px solid var(--ln);border-radius:999px;padding:4px}
+.seg button{background:none;border:0;color:var(--dim);font:500 13px G;padding:8px 14px;border-radius:999px;cursor:pointer}
+.seg button.on{background:var(--royal);color:#fff}
+.back{color:var(--baby);font-size:13px;text-decoration:none}
+main{padding:24px 28px 40px;display:grid;gap:14px}
+.kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.k{background:var(--c1);border:1px solid var(--ln);border-radius:16px;padding:18px}
+.k span{font-size:11px;color:var(--dim);letter-spacing:.12em;text-transform:uppercase}
+.k b{display:block;font-size:30px;font-weight:500;letter-spacing:-.03em;margin:10px 0 6px}
+.k i{font-style:normal;font-size:12px;color:var(--ok)}
+.k.hero{background:linear-gradient(135deg,#0C2B80,var(--royal))}.k.hero span{color:#dbe6ff}
+.g2{display:grid;grid-template-columns:2fr 1fr;gap:14px}
+.g3{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:14px}
+.p{background:var(--c1);border:1px solid var(--ln);border-radius:16px;padding:20px}
+.p h4{font-size:14px;font-weight:500;display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.p h4 small{font:12px M;color:var(--mut)}
+svg text{font-family:M;fill:var(--mut);font-size:10px}
+.lg{display:flex;gap:16px;font-size:12px;color:var(--dim)}.lg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.fun div{display:flex;align-items:center;gap:12px;margin-bottom:10px;font-size:13px}
+.fun .bar{height:34px;border-radius:8px;background:linear-gradient(90deg,var(--royal),#4C7BFF);display:flex;align-items:center;padding:0 12px;font:500 14px G;transition:width 1s cubic-bezier(.2,.7,.2,1);min-width:64px}
+.fun span{color:var(--dim);width:92px;flex:none}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{text-align:left;color:var(--mut);font-weight:400;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:0 0 10px}
+td{padding:11px 0;border-top:1px solid var(--ln)}td.n{font-family:M;text-align:right}th.n{text-align:right}
+.pill{font-size:11px;padding:3px 9px;border-radius:999px;background:rgba(61,220,151,.12);color:var(--ok)}
+.feed{display:flex;flex-direction:column;gap:8px;max-height:300px;overflow:hidden}
+.fi{display:flex;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:10px;background:var(--c2);font-size:13px;animation:in .6s ease}
+.fi small{display:block;color:var(--dim);font-size:11px;margin-top:3px}.fi b{font:500 13px M;color:var(--ok);white-space:nowrap}
+@keyframes in{from{opacity:0;transform:translateY(-8px)}}
+.ring{display:flex;align-items:center;gap:20px}
+.ltv div{display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid var(--ln);font-size:13px}.ltv div span{color:var(--dim)}.ltv div b{font:500 14px M}
+.note{font-size:11px;color:var(--mut);text-align:center;padding-top:6px}
+@media(max-width:1100px){.kpis{grid-template-columns:repeat(3,1fr)}.g2,.g3{grid-template-columns:1fr}}
+@media(max-width:600px){.kpis{grid-template-columns:1fr 1fr}main,.top{padding-left:14px;padding-right:14px}}
+body.emb .top{padding-right:190px}@media(max-width:600px){body.emb .top{padding-right:14px;padding-top:64px}}</style></head><body>
+<div class="top">
+  <div class="l"><span class="logo">DBM</span><span class="client">Databoard · <b>Summit Home Services</b> (demo)</span></div>
+  <div class="seg" id="seg"><button data-r="7">7 days</button><button data-r="30" class="on">30 days</button><button data-r="90">90 days</button><button data-r="365">12 months</button></div>
+  <div class="l"><span class="live"><span class="dot"></span><span id="upd">Live · updated just now</span></span><a class="back" id="back" href="../#databoard">← Back to site</a></div>
+</div>
+<main>
+  <div class="kpis" id="kpis"></div>
+  <div class="g2">
+    <div class="p"><h4>Ad spend vs. paid revenue <span class="lg"><span><i style="background:#4C7BFF"></i>Revenue</span><span><i style="background:#5E6B88"></i>Spend</span></span></h4><svg id="ch" viewBox="0 0 800 260" width="100%" preserveAspectRatio="none"></svg></div>
+    <div class="p"><h4>Lead to revenue funnel <small>every row traced</small></h4><div class="fun" id="fun"></div></div>
+  </div>
+  <div class="g3">
+    <div class="p"><h4>Return by channel <small>paid revenue / spend</small></h4><table id="tb"></table></div>
+    <div class="p"><h4>Customer lifetime value <small>vs. cost to acquire</small></h4><div class="ltv" id="ltv"></div></div>
+    <div class="p"><h4>Live lead feed <small class="live"><span class="dot"></span>real time</small></h4><div class="feed" id="feed"></div></div>
+  </div>
+  <p class="note">Demo data for illustration. Client Databoards connect ad platforms, call tracking, CRM and invoices.</p>
+</main>
+<script>
+const R={7:.24,30:1,90:2.9,365:11.6};
+const f=n=>n>=1e6?'$'+(n/1e6).toFixed(2)+'M':n>=1e3?'$'+(n/1e3).toFixed(1)+'K':'$'+Math.round(n);
+const c=n=>Math.round(n).toLocaleString();
+function draw(r){
+ const m=R[r],spend=18400*m,rev=241600*m,leads=412*m,booked=238*m,won=96*m;
+ const K=[['Paid revenue',f(rev),'▲ 18% vs prior',1],['Return on ad spend',(rev/spend).toFixed(1)+'x','▲ 1.4x'],['Ad spend',f(spend),'On budget'],['Qualified leads',c(leads),'▲ 22%'],['Cost per won job',f(spend/won),'▼ 11%'],['Close rate',Math.round(won/leads*100)+'%','▲ 4 pts']];
+ kpis.innerHTML=K.map(k=>`<div class="k${k[3]?' hero':''}"><span>${k[0]}</span><b>${k[1]}</b><i>${k[2]}</i></div>`).join('');
+ const F=[['Leads',leads],['Spam removed',leads*.93],['Booked',booked],['Quoted',booked*.78],['Won jobs',won],['Revenue',rev]];
+ fun.innerHTML=F.map((x,i)=>`<div><span>${x[0]}</span><div class="bar" style="width:${[100,93,62,48,30,100][i]}%;${i==5?'background:linear-gradient(90deg,#1F8F63,#3DDC97)':''}">${i==5?f(x[1]):c(x[1])}</div></div>`).join('');
+ const ch=[['Google Ads',.46,13.6],['Local Services',.18,17.2],['Meta Ads',.24,9.8],['Retargeting',.12,11.4]];
+ tb.innerHTML='<tr><th>Channel</th><th class="n">Spend</th><th class="n">Revenue</th><th class="n">ROAS</th></tr>'+ch.map(x=>`<tr><td>${x[0]}</td><td class="n">${f(spend*x[1])}</td><td class="n">${f(spend*x[1]*x[2])}</td><td class="n"><span class="pill">${x[2]}x</span></td></tr>`).join('');
+ ltv.innerHTML=`<div class="ring"><svg width="96" height="96" viewBox="0 0 36 36"><circle cx="18" cy="18" r="15.9" fill="none" stroke="#0F1628" stroke-width="3.5"/><circle cx="18" cy="18" r="15.9" fill="none" stroke="#3DDC97" stroke-width="3.5" stroke-dasharray="92 100" stroke-linecap="round" transform="rotate(-90 18 18)"/><text x="18" y="20.5" text-anchor="middle" style="fill:#fff;font-size:7px;font-family:G">21:1</text></svg><p style="font-size:13px;color:var(--dim);line-height:1.5">Every customer is worth <b style="color:#fff">21x</b> what it cost to win them.</p></div>
+ <div><span>Avg. customer lifetime value</span><b>$8,940</b></div><div><span>Cost to acquire a customer</span><b>$426</b></div><div><span>Repeat & referral revenue</span><b>34%</b></div><div><span>Payback period</span><b>9 days</b></div>`;
+ const n=r==7?7:r==30?30:r==90?13:12,W=800,H=260,P=24;let s=[],v=[];
+ for(let i=0;i<n;i++){const t=i/(n-1);v.push(.55+t*.4+Math.sin(i*1.7)*.08);s.push(.5+Math.sin(i*1.1)*.05)}
+ const x=i=>P+i*(W-2*P)/(n-1),y=q=>H-P-q*(H-2*P);
+ const pr=a=>a.map((q,i)=>(i?'L':'M')+x(i)+' '+y(q)).join(' ');
+ let g='';for(let i=0;i<4;i++)g+=`<line x1="${P}" x2="${W-P}" y1="${P+i*(H-2*P)/3}" y2="${P+i*(H-2*P)/3}" stroke="rgba(168,216,255,.07)"/>`;
+ const sp=s.map(q=>q*.18);
+ document.getElementById('ch').innerHTML=`<defs><linearGradient id="gr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4C7BFF" stop-opacity=".45"/><stop offset="1" stop-color="#4C7BFF" stop-opacity="0"/></linearGradient></defs>${g}<path d="${pr(v)} L${x(n-1)} ${H-P} L${x(0)} ${H-P}Z" fill="url(#gr)"/><path d="${pr(v)}" fill="none" stroke="#4C7BFF" stroke-width="2.5"/><path d="${pr(sp)}" fill="none" stroke="#5E6B88" stroke-width="2" stroke-dasharray="4 4"/>`;
+}
+seg.onclick=e=>{const b=e.target.closest('button');if(!b)return;seg.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x==b));draw(b.dataset.r)};
+draw(30);
+const L=[['Roof repair · Google Ads','Booked inspection','$640'],['Water heater · LSA','Job won','$2,180'],['Kitchen remodel · Meta','Quote sent','$38,500'],['AC tune-up · Google Ads','Job won','$289'],['Drain cleaning · LSA','Booked','$425'],['Gutter install · Retargeting','Job won','$3,950'],['Bath remodel · Google Ads','Quote sent','$21,700'],['Sewer line · LSA','Job won','$6,400']];
+let li=0,t0=Date.now();
+function add(){const l=L[li++%L.length],d=document.createElement('div');d.className='fi';d.innerHTML=`<div>${l[0]}<small>${l[1]} · just now</small></div><b>+${l[2]}</b>`;feed.prepend(d);if(feed.children.length>6)feed.lastChild.remove();t0=Date.now()}
+for(let i=0;i<4;i++)add();setInterval(add,3800);
+setInterval(()=>{upd.textContent='Live · updated '+Math.round((Date.now()-t0)/1000)+'s ago'},1000);
+{const q=new URLSearchParams(location.search);if(q.has('thumb')||q.has('embed')){back.style.display='none'}if(q.has('embed')){document.body.classList.add('emb')}}
+</script></body></html>

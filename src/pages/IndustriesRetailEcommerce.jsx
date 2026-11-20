@@ -1,0 +1,55 @@
+import React from 'react';
+import { Header, Footer } from '../components/SiteChrome.jsx';
+
+function SectionPhHero0(){return (<>
+<section className="ph-hero photo"><div className="bgimg"><img src="/img/clothier.webp" alt="" style={{"objectPosition":"50% 35%"}} fetchpriority="high" /></div><div className="vig" /><div className="grain" />
+  <div className="wrap"><div className="ph-grid"><div><h1 className="words in" data-split>From first click<br /><em>to the fitting room.</em></h1>
+        <div className="hsub rv in" style={{"transitionDelay":".35s"}}>Retail marketing, <b>tracked to the sale.</b></div>
+        <p className="hp rv in" style={{"transitionDelay":".45s"}}>For appointment-based retail, the sale happens in person. We connect your ads to booked appointments and in-store purchases, so you know what really drives revenue.</p>
+        <div className="acts rv in" style={{"transitionDelay":".6s"}}><a className="btn" href="#contact">Book a Free Audit Call <i aria-hidden="true">↗</i></a></div><div className="hchips rv in" style={{"transitionDelay":".8s"}}><div className="hchip"><b>$2.1M+</b><span>Tracked sales, one clothier</span></div><div className="hchip"><b>1,284</b><span>Booked fittings</span></div><div className="hchip"><b>801</b><span>Buyers</span></div></div></div></div></div></section>
+</>);}
+
+function SectionSec1(){return (<>
+<section className="sec t-ice tight"><div className="wrap"><div className="answer rv"><div><h2>How DBM helps retail brands</h2><p>We run Google and Meta ads, email, creative and tracking for retail brands, custom clothiers and Shopify stores. For showroom businesses, we connect leads to booked appointments and in-store sales, so every purchase can be tied back to its source.</p></div><ul><li><i>✓</i><span>Leads tracked to booked appointments</span></li><li><i>✓</i><span>In-store and online sales matched to ads</span></li><li><i>✓</i><span>Creative made for fashion and lifestyle</span></li><li><i>✓</i><span>Email and SMS follow-up that books</span></li></ul></div></div></section>
+</>);}
+
+function SectionSec2(){return (<>
+<section className="sec t-dark "><div className="wrap"><div className="hd2"><h2 className="words" data-split>Where retail marketing loses the thread</h2></div><div className="cgrid" style={{"--c":"3"}}><div className="cd rv" style={{"transitionDelay":"0.00s"}}><span className="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z" /><circle cx={12} cy={12} r={3} /></svg></span><h3>The sale happens offline</h3><p>Ads platforms see the click. They never see the fitting, the deposit or the final purchase.</p></div><div className="cd rv" style={{"transitionDelay":"0.07s"}}><span className="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx={12} cy={12} r={9} /><path d="M12 7v5l3 2" /></svg></span><h3>Leads go cold</h3><p>An appointment-based brand lives or dies on how fast a lead gets booked.</p></div><div className="cd rv" style={{"transitionDelay":"0.14s"}}><span className="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 3v17h17M8 16v-4M13 16V8M18 16V5" /></svg></span><h3>Online-only reporting</h3><p>If you only count website orders, your showroom looks like it gets no help from ads.</p></div></div></div></section>
+</>);}
+
+function SectionSec3(){return (<>
+<section className="sec t-ice "><div className="wrap"><div className="hd2"><h2 className="words" data-split>The playbook we run</h2><p className="lead rv">The services we lean on hardest for this industry, and why.</p></div><div className="cgrid" style={{"--c":"4"}}><a className="cd rv" style={{"transitionDelay":"0.00s"}} href="/services/meta-ads/"><span className="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 10 14-6v16L3 14zM7 16l2 5h4l-2-4M21 9v6" /></svg></span><h3>Meta + Social Ads</h3><p>Lifestyle creative and lead forms that book appointments.</p><span className="more">How it works <i aria-hidden="true">↗</i></span></a><a className="cd rv" style={{"transitionDelay":"0.07s"}} href="/services/google-ads/"><span className="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx={10} cy={10} r={6} /><path d="m15 15 5 5" /></svg></span><h3>Google Ads + Local Services</h3><p>Search for people looking for exactly what you make.</p><span className="more">How it works <i aria-hidden="true">↗</i></span></a><a className="cd rv" style={{"transitionDelay":"0.14s"}} href="/services/tracking-attribution/"><span className="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5h6v6H4zM14 13h6v6h-6zM10 8h7v5M7 11v5h7" /></svg></span><h3>Tracking + Attribution</h3><p>Leads matched to bookings and purchases in Shopify and your POS.</p><span className="more">How it works <i aria-hidden="true">↗</i></span></a><a className="cd rv" style={{"transitionDelay":"0.21s"}} href="/services/creative/"><span className="ico"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x={3} y={5} width={18} height={14} rx={2} /><path d="m10 9 5 3-5 3z" /></svg></span><h3>Creative That Converts</h3><p>Editorial photo and video that matches your brand.</p><span className="more">How it works <i aria-hidden="true">↗</i></span></a></div></div></section>
+</>);}
+
+function SectionSec4(){return (<>
+<section className="sec t-navy "><div className="wrap"><div className="hd2 c"><h2 className="words" data-split>Real numbers, <em>real invoices</em></h2><p className="lead rv">Pulled from live client dashboards. Clients stay anonymous.</p></div><div className="kpis" style={{"--n":"3"}}><div className="kpi rv" style={{"transitionDelay":"0.00s"}}><span className="lb">Custom clothier</span><div><div className="v">$<span data-c="2.1" data-d={1}>2.1</span><small>M+</small></div><div className="d">In tracked sales since January 2025.</div></div></div><div className="kpi rv" style={{"transitionDelay":"0.08s"}}><span className="lb">Leads</span><div><div className="v"><span data-c={3567} data-d={0}>3567</span></div><div className="d">Leads followed from the first click.</div></div></div><div className="kpi rv" style={{"transitionDelay":"0.16s"}}><span className="lb">Buyers</span><div><div className="v"><span data-c={801} data-d={0}>801</span></div><div className="d">Paying customers from 1,284 booked fittings.</div></div></div></div></div></section>
+</>);}
+
+function SectionSec5(){return (<>
+<section className="sec t-dark tight"><div className="wrap"><div className="hd2 c"><h2 className="words" data-split>Read the full case study</h2></div><div className="cases" style={{"marginTop":"0","gridTemplateColumns":"1fr","maxWidth":"820px","margin":"0 auto"}}><a className="case rv" href="/case-studies/custom-clothier/" style={{"transitionDelay":"0.0s","display":"block"}}><div className="ph"><div className="tg"><span className="ch">Google + Meta</span><h3>Custom Clothier</h3></div><img src="/img/clothier.webp" alt="Tailor measuring a client" loading="lazy" /><div className="big"><span className="mono">Tracked sales</span><b>$2.1M+</b><span>3,567 leads became 1,284 booked fittings and 801 buyers.</span><span className="vcs">View Case Study <i aria-hidden="true">↗</i></span></div>
+          <div className="fn"><div><span>Leads</span><b>3,567</b></div><div><span>Booked</span><b>1,284</b></div><div><span>Buyers</span><b>801</b></div><div><span>Sales</span><b>$2.1M+</b></div></div></div></a></div><div className="aprompt rv"><p>What’s slipping through in your account?</p><a className="btn" href="#contact">Book a Free Audit Call <i aria-hidden="true">↗</i></a></div></div></section>
+</>);}
+
+function SectionSec6(){return (<>
+<section className="sec t-ice "><div className="wrap"><div className="faq2"><div><h2 className="words" data-split>Questions owners ask us</h2><p className="lead rv">Straight answers. If yours isn't here, ask us on the call.</p></div><div className="qa"><div className="qi rv"><button type="button" aria-expanded="false">Do you work with Shopify stores?<i>+</i></button><div className="a"><p>Yes. We connect Shopify sales to your ads and leads, and we can match online and in-store purchases.</p></div></div><div className="qi rv"><button type="button" aria-expanded="false">What about appointment-based retail?<i>+</i></button><div className="a"><p>That is a strength. For one custom clothier, we followed 3,567 leads to 1,284 booked fittings and 801 buyers.</p></div></div><div className="qi rv"><button type="button" aria-expanded="false">Do you do email marketing?<i>+</i></button><div className="a"><p>Yes. We design and send email campaigns and set up follow-up flows that book appointments.</p></div></div><div className="qi rv"><button type="button" aria-expanded="false">Can you shoot product and lifestyle content?<i>+</i></button><div className="a"><p>Yes. Photo and video are made in-house, including on-model and flat-lay product work.</p></div></div></div></div></div></section>
+</>);}
+
+function SectionSec7(){return (<>
+<section className="sec t-dark tight"><div className="wrap"><p className="rel-h rv">Services for retail brands</p><div className="rel" style={{"--c":"4"}}><a className="rv" href="/services/google-ads/"><span>Google Ads + Local Services<small>Search and Local Services Ads tuned to booked jobs</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/services/meta-ads/"><span>Meta + Social Ads<small>Facebook and Instagram ads, lead forms and Reels</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/services/tracking-attribution/"><span>Tracking + Attribution<small>Every lead followed from ad click to paid invoice</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/services/creative/"><span>Creative That Converts<small>Video, photo and copy made in-house</small></span><i aria-hidden="true">↗</i></a></div><p className="rel-h rv">Other industries we serve</p><div className="rel" style={{"--c":"4"}}><a className="rv" href="/industries/roofing/"><span>Roofing<small>Storm, retail and replacement</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/industries/plumbing-hvac/"><span>Plumbing + HVAC<small>Service calls and installs</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/industries/remodelers-builders/"><span>Remodelers + Builders<small>High-ticket projects</small></span><i aria-hidden="true">↗</i></a><a className="rv" href="/industries/home-services/"><span>Home Services<small>Cleaning, closets, flooring, vents</small></span><i aria-hidden="true">↗</i></a></div></div></section>
+</>);}
+
+export default function IndustriesRetailEcommerce(){return (<>
+<Header home={false} />
+<main id="main">
+<SectionPhHero0 />
+<SectionSec1 />
+<SectionSec2 />
+<SectionSec3 />
+<SectionSec4 />
+<SectionSec5 />
+<SectionSec6 />
+<SectionSec7 />
+</main>
+<Footer home={false} />
+<a className="btn audit-float" href="#contact" hidden>Book a Free Audit Call <i aria-hidden="true">↗</i></a>
+</>);}
